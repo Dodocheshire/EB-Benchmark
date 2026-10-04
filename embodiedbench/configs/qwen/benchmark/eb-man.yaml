@@ -1,0 +1,23 @@
+# @package _global_
+# Credentials: source /root/.config/embodiedbench-qwen/client.env
+env: eb-man
+model_name: qwen3.8-27b
+model_type: remote
+down_sample_ratio: 1
+language_only: 0
+eval_sets: []
+chat_history: 0
+n_shots: 4
+multiview: 0
+detection_box: 1
+multistep: 0
+resolution: 500
+exp_name: baseline
+visual_icl: 0
+tp: 1
+api_extra_body:
+  chat_template_kwargs:
+    enable_thinking: false
+api_timeout: 120
+api_max_tokens: 8192
+api_max_tokens_limit: 32768

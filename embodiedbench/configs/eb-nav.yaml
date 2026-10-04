@@ -1,0 +1,21 @@
+model_name: gpt-4o-mini
+down_sample_ratio: 1
+model_type: remote
+language_only: false
+eval_sets: []
+chat_history: false
+n_shots: 3
+multiview: false
+detection_box: false
+multistep: false
+resolution: 500
+exp_name: navigation_baseline
+visual_icl: false
+tp: 1
+truncate: true
+api_extra_body:
+  chat_template_kwargs:
+    enable_thinking: false
+api_timeout: 120
+api_max_tokens: 8192
+api_max_tokens_limit: 32768

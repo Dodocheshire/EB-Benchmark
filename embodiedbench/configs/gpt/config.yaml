@@ -1,0 +1,7 @@
+defaults:
+  - benchmark: eb-nav
+  - _self_
+
+# Read the GPT environment defaults rather than the original provider config.
+base_config_path: embodiedbench/configs/gpt/benchmark/${env}.yaml
+log_level: INFO

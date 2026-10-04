@@ -1,0 +1,20 @@
+# @package _global_
+# Credentials: source /root/.config/embodiedbench-codex/client.env
+# No explicit effort: upstream uses medium.
+env: eb-man
+model_name: gpt-6.1-sol
+model_type: remote
+down_sample_ratio: 1
+language_only: 0
+eval_sets: []
+chat_history: 0
+n_shots: 4
+multiview: 0
+detection_box: 1
+multistep: 0
+resolution: 500
+exp_name: codex_baseline
+visual_icl: 0
+tp: 1
+api_extra_body: {}
+api_timeout: 120

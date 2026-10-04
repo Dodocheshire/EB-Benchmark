@@ -1,0 +1,44 @@
+{
+  "scope": "EmbodiedBench only; all README.md and third-party dependencies preserved",
+  "deleted": [
+    "docs/report/tmp.md",
+    "docs/report/EB-ALFRED-ONECALL.md",
+    "docs/report/assets/EmbodiedBench_Frame.png",
+    "docs/report/assets/EmbodiedBench_Frame.svg",
+    "docs/report/assets/EB-ALFRED-episode21-step0.png",
+    "docs/report/assets/EB-ALFRED-episode21-step3.png",
+    "embodiedbench/envs/eb_alfred/doc/FAQ.md",
+    "embodiedbench/envs/eb_alfred/models/ERRATA.md",
+    "tests/test_manip_actions.py",
+    "embodiedbench/envs/eb_manipulation/tools/test_config_generator.py",
+    "embodiedbench/envs/eb_manipulation/vlm/scripts/cliport_test.py",
+    "embodiedbench/configs/test.yaml",
+    "scripts/summarize_navigation_run.py",
+    "tests/__pycache__/test_manip_actions.cpython-39.pyc"
+  ],
+  "added": [
+    "EXPERIMENT_RESULT.md",
+    "scripts/run_evaluations.py",
+    "scripts/report_results.py",
+    "docs/report/cleanup_manifest.json",
+    "docs/report/benchmark_overview.svg",
+    "docs/report/success_rate.svg",
+    "docs/report/mean_task_progress.svg",
+    "docs/report/mean_num_steps.svg",
+    "docs/report/mean_planner_steps.svg",
+    "docs/report/mean_episode_elapsed_seconds.svg",
+    "docs/report/mean_tokens_per_completed_episode.svg"
+  ],
+  "updated": [
+    "scripts/run_codex_evaluations.py",
+    "docs/report/benchmark_results.csv",
+    "docs/report/benchmark_results.json",
+    "docs/report/benchmark_overview.png",
+    "docs/report/success_rate.png",
+    "docs/report/mean_task_progress.png",
+    "docs/report/mean_num_steps.png",
+    "docs/report/mean_planner_steps.png",
+    "docs/report/mean_episode_elapsed_seconds.png",
+    "docs/report/mean_tokens_per_completed_episode.png"
+  ]
+}

@@ -1,0 +1,6 @@
+defaults:
+  - benchmark: eb-nav
+  - _self_
+
+base_config_path: embodiedbench/configs/deepseek/benchmark/${env}.yaml
+log_level: INFO
