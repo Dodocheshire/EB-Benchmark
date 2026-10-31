@@ -9,6 +9,7 @@ from mimetypes import guess_type
 from embodiedbench.envs.eb_manipulation.eb_man_utils import ROTATION_RESOLUTION, VOXEL_SIZE
 from embodiedbench.planner.remote_model import RemoteModel
 from embodiedbench.planner.manip_actions import parse_manipulation_plan, InvalidManipulationPlan
+from embodiedbench.planner.manip_examples import normalize_man_examples
 from embodiedbench.planner.custom_model import CustomModel
 from embodiedbench.planner.planner_utils import local_image_to_data_url, template_manip, template_lang_manip
 from embodiedbench.main import logger
@@ -27,7 +28,11 @@ class ManipPlanner():
         self.model_type = model_type
         self.obs_key = obs_key
         self.system_prompt = system_prompt
-        self.examples = examples
+        self.examples = (
+            normalize_man_examples(examples)
+            if 'qwen' in model_name.lower() and model_type != 'custom'
+            else examples
+        )
         self.n_shot = n_shot
         self.chat_history = chat_history # whether to include all the chat history for prompting
         if model_type == 'custom':
